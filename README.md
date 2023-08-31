@@ -16,13 +16,21 @@
 
  
     <!-- termux环境 -->
+        可能解决方法
+            https://www.cnblogs.com/ze-yan/p/12242383.html
+
         1.zerotermux:+恢复包：过程很麻烦直接使用这些复原初始环境
-            zerotermux：目前没有上传
-            恢复包：目前没有上传
+            zerotermux：链接：https://share.weiyun.com/WbqXrgus 密码：fxn5ym
+                0.或许也能尝试其它版本？
+            
+            恢复包：链接：https://share.weiyun.com/hqkfo6z5 密码：yffycy
+                0.在恢复包中默认启动了这个系统并且cd进入一个文件夹
+                    这是执行的信息   echo "cd /sdcard/termux_project/" >> $PREFIX/etc/profile
+                                    echo "proot-distro login debian" >> $PREFIX/etc/profile
+                                    <!-- 能在$PREFIX/etc/profile文件中删除或者修改 -->
 
     <!-- 无线adb问题： -->
         1.要链接wifl-开启分屏/原因开闭机器码页面就会消失和刷新
-            
             查看配对码地址+端口
             adb pair 192.168.0.0:xxx
             接着输入配对码
